@@ -8,6 +8,7 @@ const connectDB = async () => {
         }
 
         console.log("Connecting to MongoDB...");
+        console.log(process.env.MONGODB_URI);
 
         await mongoose.connect(process.env.MONGODB_URI, {
             dbName: "Keshav1711",
